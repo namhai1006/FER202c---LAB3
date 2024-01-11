@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Add this link in the head section of your HTML file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-******************" crossorigin="anonymous" />
+
+    <style>
+        /* Additional custom styles */
+        .banner {
+            height: 530px;
+            background-color: #ddd;
+            /* Placeholder color */
+            text-align: center;
+            line-height: 530px;
+            /* Align text vertically */
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .product-card {
+            height: 280px;
+            background-color: #f8f9fa;
+            /* Placeholder color */
+            border: 1px solid #dee2e6;
+            /* Bootstrap colors */
+            margin-bottom: 1rem;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .product-label {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background-color: orange;
+            padding: 0.5rem;
+            font-weight: bold;
+        }
+
+        .nav-link,
+        .dropdown-item {
+            cursor: pointer;
+        }
+
+        .dropdown-menu {
+            min-width: auto;
+        }
+
+        .books {
+            text-align: center;
+            font-size: 50px;
+            font-weight: 20px;
+            color: #ddd;
+            margin-bottom: 10px;
+        }
+
+        .cach {
+            margin-top: 100px;
+        }
+
+        .body {
+            background-color: rgb(79, 76, 76);
+        }
+
+        .colo {
+            color: white;
+            font-size: 50px;
+        }
+
+        .container-fluid {
+            
+            padding-left: 300px;
+            padding-right: 300px;
+        }
+
+        .mb-3 {
+            padding-top: 55px;
+        }
+
+        .hu {
+            padding-top: 10px;
+            width: 30px;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 530px;
+            /* Keep the original image size */
+        }
+        .product-label {
+        left: 0; /* Move the label to the left */
+        height: 40px;
+        width: 120px;
+        right: auto;
+        text-align: center;
+        background-color:yellow; /* Change the background color to yellow */
+        color: black; /* Change the text color to black for better visibility */
+        padding-right: 0px;
+    }
+    </style>
+</head>
+
+<body class="body">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: white; font-size: 30px;">Pizza House</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #717476;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
+                            style="color: #717476;">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search"
+                            style="background-color: white; color: black; width: 350px;">
+                        <button class="btn btn-outline-success" type="submit"
+                            style="background-color: red; color: white;">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="banner">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="pizza-800x480.jpg" class="d-block" alt="Pizza">
+                </div>
+                <div class="carousel-item">
+                    <img src="banh-pizza-ngon.jpg" class="d-block w-100" alt="1920x530">
+                </div>
+                <div class="carousel-item">
+                    <img src="image3.png" class="d-block w-100" alt="1920x530">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <div class="container my-4">
+        <h2 class="mb-3 colo">Our menu</h2>
+        <div class="row">
+            <!-- Example Product Card -->
+            <div class="col-md-3">
+                <div class="card position-relative" style="width: 18rem;">
+                    <div
+                        class="product-label position-absolute top-0 border-left-0 end-0 ">
+                        SALE</div>
+
+                    <img src="tải xuống.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Margherita Pizza</h5>
+                        <p class="product-price">
+                            <del class="idmoney"> $40.00</del>
+                            <span class="ms-auto" style="color: #FEC007;">$24.00</span>
+                        </p>
+                        <a href="#" class="btn btn-primary" style=" background-color: #717476;
+                        color: white;
+                        display: block;
+                        margin: 0 auto; ">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for other products -->
+
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="4cbedae100000578-5785343-image-a-10_1527662797308-1.jpg" style="height: 338px;"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mushroom Pizza</h5>
+                        <p class="card-text">$25.00</p>
+                        <a href="#" class="btn btn-primary" style=" background-color: #717476;
+                        color: white;
+                        display: block;
+                        margin: 0 auto; ">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <div
+                    class="product-label position-absolute top-0 border-left-0 end-0 ">
+                    NEW</div>
+                    <img src="Pizza_Hut_pizza_tinh_yeu_Valentines_2014_01.jpg" style="height: 338px;"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hawaiian Pizza</h5>
+                        <p class="card-text">$30.00</p>
+                        <a href="#" class="btn btn-primary" style=" background-color: #717476;
+                        color: white;
+                        display: block;
+                        margin: 0 auto; ">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <div
+                    class="product-label position-absolute top-0 border-left-0 end-0 ">
+                    SALE</div>
+                    <img src="istockphoto-1349560847-612x612.jpg" style="height: 338px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pesto Pizza</h5>
+                        <p class="product-price">
+                            <del class="idmoney"> $40.00</del>
+                            <span class="ms-auto" style="color: #FEC007;">$30.00</span>
+                        </p>
+                        <a href="#" class="btn btn-primary" style=" background-color: #717476;
+                        color: white;
+                        display: block;
+                        margin: 0 auto; ">Buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cach">
+            <div class="books">Book Your Table</div>
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Your Name*">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Your Email*">
+                </div>
+                <div class="col-md-4">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Select a Services</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"
+                    placeholder="Please write your comments"></textarea>
+            </div>
+            <div class="hu">
+                <input type="submit" value="Send Message"
+                    style="background-color: #FEC007; font-size: 20px; color: white;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
