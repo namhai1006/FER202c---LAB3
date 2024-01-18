@@ -1,0 +1,23 @@
+.container{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  
+}
+.card-image{
+  align-items: center;
+  width: 550px;
+  height: 350px;
+  display: flex;
+}
+.card-title{
+   padding-left: 900px;
+    padding-top: 70px;
+}
+.Row{
+  display: flex;
+}
+.card-description{
+  padding-left: 900px;
+  padding-top:10px;
+}
